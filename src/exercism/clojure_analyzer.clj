@@ -11,7 +11,7 @@
   [slug in out]
   (println (str "Analyzing: " slug))
   (spit (str out "representation.txt") (ana.jvm/analyze (slurp in)))
-  (println (str "Saved to: " out "representaion.txt")))
+  (println (str "Saved to: " out "representation.txt")))
 
 (comment
   
