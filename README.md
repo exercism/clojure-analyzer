@@ -4,7 +4,7 @@ Exercism's Automated Analysis a long-term endeavour to provide rapid feedback to
 
 ## Usage
 
-To run the analyzer, pass it an exercise <slug>, an input solution file and an output directory for the AST:
+To run the analyzer, pass it an exercise `<slug>`, an input solution file and an output directory for the AST:
 
     $ clojure -m exercism.clojure-analyzer two-fer resources/example.clj resources/output/
     Analyzing: two-fer
