@@ -26,9 +26,11 @@ user> (ana.jvm/analyze 1)
 
 Run the project directly:
 
-    $ clojure -m exercism.clojure-analyzer
+    $ clojure -m exercism.clojure-analyzer "two-fer" "resources/example.clj" "resources/output/"
+    Analyzing: two-fer
+    Saved to: resources/output/representaion.txt
 
-Run the project's tests (they'll fail until you edit them):
+Run the project's tests:
 
     $ clojure -A:test:runner
 
