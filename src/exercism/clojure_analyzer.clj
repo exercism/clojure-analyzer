@@ -1,16 +1,15 @@
 (ns exercism.clojure-analyzer
   (:require
    [clojure.tools.analyzer.jvm :as ana.jvm]
-   [cheshire.core :as json])
+   [cheshire.core :as json]
+   [clojure.edn :as edn])
   (:gen-class))
-
-(def solution
-  (slurp "resources/example.clj"))
 
 (defn -main
   [slug in out]
   (println (str "Analyzing: " slug))
-  (spit (str out "representation.txt") (ana.jvm/analyze (slurp in)))
+  (spit (str out "representation.txt")
+        (ana.jvm/analyze (edn/read-string (slurp in))))
   (println (str "Saved to: " out "representation.txt")))
 
 (comment
