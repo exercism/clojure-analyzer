@@ -31,5 +31,5 @@ Run that uberjar:
 
 ## Copyright
 
-All content in this repository is Copyright to Exercism and licensed under MIT.
+All content in this repository is Copyright to Exercism and licensed under AGPL.
 
