@@ -8,9 +8,9 @@
 (defn -main
   [slug in out]
   (println (str "Analyzing: " slug))
-  (spit (str out "representation.txt")
-        (ana.jvm/analyze (edn/read-string (slurp in))))
-  (println (str "Saved to: " out "representation.txt")))
+  (spit (str out "analysis.json")
+        (json/encode (ana.jvm/analyze (edn/read-string (slurp in)))))
+  (println (str "Saved to: " out "analysis.json")))
 
 (comment
   
