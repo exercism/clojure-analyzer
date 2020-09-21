@@ -8,7 +8,7 @@ To run the analyzer, pass it an exercise `<slug>`, an input solution file and an
 
     $ clojure -m exercism.clojure-analyzer two-fer resources/example.clj resources/output/
     Analyzing: two-fer
-    Saved to: resources/output/representation.txt
+    Saved to: resources/output/analysis.json
 
 Generate a JSON static analysis report for a solution file:
 
