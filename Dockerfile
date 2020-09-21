@@ -1,5 +1,5 @@
-FROM java:8-alpine
-RUN mkdir -p /resources /app/resources/output
-WORKDIR /
-COPY clojure-analyzer.jar .
-CMD java -jar clojure-analyzer.jar
+FROM clojure:tools-deps-alpine
+LABEL Name=clojure-analyzer Version=0.0.1
+COPY . /opt/analyzer
+WORKDIR /opt/analyzer
+ENTRYPOINT ["/opt/analyzer/bin/run.sh"]
