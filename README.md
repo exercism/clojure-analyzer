@@ -29,6 +29,10 @@ Run that uberjar:
 
     $ java -jar clojure-analyzer.jar
 
+## Documentation
+
+The specification of the analyzer interface is found in the [track-tooling](https://github.com/exercism/v3-docs/tree/master/anatomy/track-tooling) section of the v3-docs repo.
+
 ## Copyright
 
 All content in this repository is Copyright to Exercism and licensed under AGPL.
