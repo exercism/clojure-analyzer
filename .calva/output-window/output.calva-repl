@@ -1,0 +1,152 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.8.3"},cider/cider-nrepl {:mvn/version,"0.26.0"}}}'  -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]"
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+nil
+clj꞉exercism.clojure-analyzer꞉> 
+#'exercism.clojure-analyzer/zloc
+clj꞉exercism.clojure-analyzer꞉> 
+(ns two-fer)
+clj꞉exercism.clojure-analyzer꞉> 
+[{:tag :list,
+  :format-string "(%s)",
+  :wrap-length 2,
+  :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+  :children
+  ({:value ns, :string-value "ns", :map-qualifier nil}
+   {:whitespace " "}
+   {:value two-fer, :string-value "two-fer", :map-qualifier nil})}
+ {:l [],
+  :pnodes
+  [{:children
+    ({:tag :list,
+      :format-string "(%s)",
+      :wrap-length 2,
+      :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+      :children
+      ({:value ns, :string-value "ns", :map-qualifier nil}
+       {:whitespace " "}
+       {:value two-fer, :string-value "two-fer", :map-qualifier nil})}
+     {:newlines "\n\n"}
+     {:tag :list,
+      :format-string "(%s)",
+      :wrap-length 2,
+      :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+      :children
+      ({:value defn, :string-value "defn", :map-qualifier nil}
+       {:whitespace " "}
+       {:value two-fer, :string-value "two-fer", :map-qualifier nil}
+       {:newlines "\n"}
+       {:whitespace "  "}
+       {:tag :list,
+        :format-string "(%s)",
+        :wrap-length 2,
+        :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+        :children
+        ({:tag :vector, :format-string "[%s]", :wrap-length 2, :seq-fn #function[clojure.core/vec], :children ()}
+         {:whitespace " "}
+         {:tag :list,
+          :format-string "(%s)",
+          :wrap-length 2,
+          :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+          :children
+          ({:value str, :string-value "str", :map-qualifier nil}
+           {:whitespace " "}
+           {:lines ["One for you, one for me."]})})}
+       {:newlines "\n"}
+       {:whitespace "  "}
+       {:tag :list,
+        :format-string "(%s)",
+        :wrap-length 2,
+        :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+        :children
+        ({:tag :vector,
+          :format-string "[%s]",
+          :wrap-length 2,
+          :seq-fn #function[clojure.core/vec],
+          :children ({:value name, :string-value "name", :map-qualifier nil})}
+         {:whitespace " "}
+         {:tag :list,
+          :format-string "(%s)",
+          :wrap-length 2,
+          :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+          :children
+          ({:value str, :string-value "str", :map-qualifier nil}
+           {:whitespace " "}
+           {:lines ["One for "]}
+           {:whitespace " "}
+           {:value name, :string-value "name", :map-qualifier nil}
+           {:whitespace " "}
+           {:lines [", one for me."]})})})}
+     {:newlines "\n"})}],
+  :ppath nil,
+  :r
+  ({:newlines "\n\n"}
+   {:tag :list,
+    :format-string "(%s)",
+    :wrap-length 2,
+    :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+    :children
+    ({:value defn, :string-value "defn", :map-qualifier nil}
+     {:whitespace " "}
+     {:value two-fer, :string-value "two-fer", :map-qualifier nil}
+     {:newlines "\n"}
+     {:whitespace "  "}
+     {:tag :list,
+      :format-string "(%s)",
+      :wrap-length 2,
+      :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+      :children
+      ({:tag :vector, :format-string "[%s]", :wrap-length 2, :seq-fn #function[clojure.core/vec], :children ()}
+       {:whitespace " "}
+       {:tag :list,
+        :format-string "(%s)",
+        :wrap-length 2,
+        :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+        :children
+        ({:value str, :string-value "str", :map-qualifier nil}
+         {:whitespace " "}
+         {:lines ["One for you, one for me."]})})}
+     {:newlines "\n"}
+     {:whitespace "  "}
+     {:tag :list,
+      :format-string "(%s)",
+      :wrap-length 2,
+      :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+      :children
+      ({:tag :vector,
+        :format-string "[%s]",
+        :wrap-length 2,
+        :seq-fn #function[clojure.core/vec],
+        :children ({:value name, :string-value "name", :map-qualifier nil})}
+       {:whitespace " "}
+       {:tag :list,
+        :format-string "(%s)",
+        :wrap-length 2,
+        :seq-fn #function[rewrite-clj.node.seq/list-node/fn--13602],
+        :children
+        ({:value str, :string-value "str", :map-qualifier nil}
+         {:whitespace " "}
+         {:lines ["One for "]}
+         {:whitespace " "}
+         {:value name, :string-value "name", :map-qualifier nil}
+         {:whitespace " "}
+         {:lines [", one for me."]})})})}
+   {:newlines "\n"})}]
+clj꞉exercism.clojure-analyzer꞉> 
