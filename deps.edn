@@ -1,6 +1,8 @@
 {:paths ["src" "resources"]
- :deps {org.clojure/clojure {:mvn/version "1.10.1"}
+ :deps {org.clojure/clojure {:mvn/version "1.10.3"}
         org.clojure/tools.analyzer.jvm {:mvn/version "1.0.0"}
+        rewrite-clj/rewrite-clj {:mvn/version "1.0.644-alpha"}
+        clj-kondo/clj-kondo {:mvn/version "2021.08.06"}
         cheshire {:mvn/version "5.10.0"}}
  :aliases
  {:test {:extra-paths ["test"]

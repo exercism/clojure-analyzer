@@ -1,6 +1,6 @@
 # Exercism Clojure analyzer
 
-Exercism's Automated Analysis a long-term endeavour to provide rapid feedback to students through the use of automated code analysis. The Clojure analyzer is based on [clojure/tools.analyzer](https://github.com/clojure/tools.analyzer) and [clj-kondo](https://github.com/borkdude/clj-kondo).
+Exercism's Automated Analysis a long-term endeavour to provide rapid feedback to students through the use of automated code analysis. The Clojure analyzer is based on [clj-kondo](https://github.com/clj-kondo/clj-kondo), [rewrite-clj](https://github.com/clj-commons/rewrite-clj) and [clojure/tools.analyzer](https://github.com/clojure/tools.analyzer).
 
 ## Usage
 
@@ -10,7 +10,7 @@ To run the analyzer, pass it an exercise `<slug>`, an input solution file and an
     Analyzing: two-fer
     Saved to: resources/output/analysis.json
 
-Generate a JSON static analysis report for a solution file:
+To generate a JSON static analysis report for a solution file using [clj-kondo](https://github.com/clj-kondo/clj-kondo):
 
 ``` bash
 $ clj-kondo --lint resources/example.clj --config '{:output {:analysis true :format :json}}'
