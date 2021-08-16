@@ -1,6 +1,6 @@
 # Exercism Clojure analyzer
 
-Exercism's Automated Analysis a long-term endeavour to provide rapid feedback to students through the use of automated code analysis. The Clojure analyzer is based on [rewrite-clj](https://github.com/clj-commons/rewrite-clj) and [clojure/tools.analyzer](https://github.com/clojure/tools.analyzer).
+Exercism's Automated Analysis a long-term endeavour to provide rapid feedback to students through the use of automated code analysis. The Clojure analyzer is based on [clj-kondo](https://github.com/clj-kondo/clj-kondo), [rewrite-clj](https://github.com/clj-commons/rewrite-clj) and [clojure/tools.analyzer](https://github.com/clojure/tools.analyzer).
 
 ## Usage
 

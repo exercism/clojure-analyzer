@@ -1,6 +1,7 @@
 (ns exercism.clojure-analyzer
   (:require
    [clojure.tools.analyzer.jvm :as ana.jvm]
+   [clj-kondo.core :as clj-kondo]
    [cheshire.core :as json]
    [clojure.edn :as edn]
    [rewrite-clj.zip :as z])
@@ -21,6 +22,9 @@ zloc
 (z/find-value zloc z/next 'defn)
 ;; more info: https://github.com/clj-commons/rewrite-clj/blob/main/doc/01-user-guide.adoc
 
+;; Get clj-kondo static analysis:
+(-> (clj-kondo/run! {:lint ["resources/example.clj"]
+                     :config {:output {:analysis true :format :edn}}}) :analysis)
 
 (defn -main
   [slug in out]
