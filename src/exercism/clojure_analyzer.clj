@@ -10,11 +10,15 @@
 ;; create a zipper, and navigate to the first non-whitespace node
 (def zloc (z/of-file "resources/example.clj"))
 
+;; explore what we've parsed
+
 zloc
 
-;; explore what we've parsed
 (z/sexpr zloc)
 
+(-> zloc z/right)
+
+(z/find-value zloc z/next 'defn)
 ;; more info: https://github.com/clj-commons/rewrite-clj/blob/main/doc/01-user-guide.adoc
 
 
@@ -26,6 +30,15 @@ zloc
   (println (str "Saved to: " out "analysis.json")))
 
 (comment
+  
+  (load-file "resources/example.clj")
+
+(keys (ana.jvm/analyze
+        (edn/read-string
+         (slurp "resources/example.clj")))
+     )
+
+  
 
   (json/generate-string {:foo "bar" :baz 5})
   (json/encode
