@@ -18,10 +18,14 @@
                               {:comment (str message " at " [row col])
                                :type (case level
                                        :error "essential"
-                                       :warning "actionable")}))}
+                                       :warning "actionable"
+                                       "informative")}))}
            {:pretty true}))
     (println (str "Saved to: " out "analysis.json"))))
 
 (comment
   (-main "two-fer" "resources/example.clj" "resources/output/")
   )
+ (case level
+   :error "essential"
+   :warning "actionable")
