@@ -16,7 +16,9 @@
            {:summary "Findings from clj-kondo"
             :comments  (vec (for [{:keys [message level row col]} comments]
                               {:comment (str message " at " [row col])
-                               :type level}))}
+                               :type (case level
+                                       :error "essential"
+                                       :warning "actionable")}))}
            {:pretty true}))
     (println (str "Saved to: " out "analysis.json"))))
 
