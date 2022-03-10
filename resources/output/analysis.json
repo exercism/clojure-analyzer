@@ -1,0 +1,10 @@
+{
+  "summary" : "Findings from clj-kondo",
+  "comments" : [ {
+    "comment" : "unused binding name at [5 5]",
+    "type" : "actionable"
+  }, {
+    "comment" : "Unresolved symbol: wrong-name at [5 27]",
+    "type" : "essential"
+  } ]
+}

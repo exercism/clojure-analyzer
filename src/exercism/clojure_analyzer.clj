@@ -6,7 +6,7 @@
 (defn ana [file]
   (clj-kondo/run! {:lint   [file]
                    :config {:output {:analysis true
-                                     :format   :edn}}})))
+                                     :format   :edn}}}))
 
 (defn -main [slug in out]
   (let [comments (:findings (ana in))]
