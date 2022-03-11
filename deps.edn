@@ -3,7 +3,7 @@
         org.clojure/tools.analyzer.jvm {:mvn/version "1.0.0"}
         rewrite-clj/rewrite-clj {:mvn/version "1.0.644-alpha"}
         clj-kondo/clj-kondo {:mvn/version "2021.08.06"}
-        cheshire {:mvn/version "5.10.0"}}
+        cheshire/cheshire {:mvn/version "5.10.0"}}
  :aliases
  {:test {:extra-paths ["test"]
          :extra-deps {org.clojure/test.check {:mvn/version "0.10.0"}}}
