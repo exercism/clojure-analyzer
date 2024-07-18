@@ -15,7 +15,7 @@ jobs:
       - uses: satackey/action-docker-layer-caching@6b09a11416d285a6bf2a9d1ce2484c878f7c985e
 
       - name: Build and push Docker images
-        uses: docker/build-push-action@a254f8ca60a858f3136a2f1f23a60969f2c402dd
+        uses: docker/build-push-action@1ca370b3a9802c92e886402e0dd88098a2533b12
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
