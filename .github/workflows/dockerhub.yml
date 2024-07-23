@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332
 
-      - uses: satackey/action-docker-layer-caching@6b09a11416d285a6bf2a9d1ce2484c878f7c985e
+      - uses: satackey/action-docker-layer-caching@46d2c640b1d8ef50d185452ad6fb324e6bd1d052
 
       - name: Build and push Docker images
         uses: docker/build-push-action@5176d81f87c23d6fc96624dfdbcd9f3830bbe445
